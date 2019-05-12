@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+body{
+  margin: 0;
+}
+
+
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 30%;
+}
+
+
+/* Middle column */
+.column.middle {
+  width: 40%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.men {
+  background-image: url("https://i.pinimg.com/originals/34/d6/de/34d6dec2c5aeaeed7c48059e12b265f7.jpg");
+  background-size: cover;
+  height: 500px;
+  padding: 11px;
+}
+.women {
+  background-image: url("https://images.unsplash.com/photo-1552256028-71eb9a7ff27d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+  background-size: cover;
+  height: 500px;
+}
+.kids {
+  background-image: url("https://images.unsplash.com/photo-1519238359922-989348752efb?ixlib=rb-1.2.1&w=1000&q=80");
+  background-size: cover;
+  height: 500px;
+
+}
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header{
+  background-color: #f1f1f1;
+  background-image: url("https://images.unsplash.com/photo-1542114955-fcb277dd22f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  text-align: center;
+  margin: inherit;
+
+}
+
+
+
+.footer {
+  background-color: grey;
+  padding: 5px;
+  text-align: center;
+
+
+}
+h2 {
+  color: brown;
+}
+.btn{
+  border-radius: 10px;
+  color: blue;
+  font-size: 19px;
+  font-style: verdana;
+  background-color: transparent;
+}
+</style>
+</head>
+<body>
+  <div style="color:#0000FF;margin:1%" class="header">
+    <marquee direction="right">
+  <h1>Yemi's Fashion</h1>
+  </marquee>
+  </div>
+
+
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="login.html">Sign In</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Categories</a>
+    <div class="dropdown-content">
+      <a href="#">Men's Clothing</a>
+      <a href="#">Women's Clothing</a>
+      <a href="#">Kiddies Collection</a>
+    </div>
+  </li>
+</ul>
+
+
+
+  <div class="row">
+  <div class="column side men">
+    <h2>Men's Clothing</h2>
+    <button class="btn"> View Categories </button>
+  </div>
+  <div class="column middle women">
+    <h2>Women's Clothing</h2>
+    <button class="btn"> View Categories </button>
+ </div>
+
+ <div class="column side kids">
+   <h2>Kiddies Collection</h2>
+   <button class="btn"> View Categories </button>
+ </div>
+
+  <div class="footer">
+  <p> Designed by: Arigbanla Yemi </p>
+  <p> Contact information: <a href="#"> yfashion@yahoo.com </a>.</p>
+</div>
+
+</body>
+</html>
